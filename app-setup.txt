@@ -1,0 +1,29 @@
+# Setup NPX
+npm install -g npx
+
+# Install NextJS
+npx create-next-app@latest --ts
+
+# Install Tools
+npm install path dotenv
+
+# Install Redux
+npm install redux react-redux redux-thunk redux-promise-middleware
+
+# Install Api
+npm install http https axios serialize-javascript local-storage
+npm install @types/serialize-javascript
+npm install @apollo/client graphql
+
+# Install Validator
+npm install validator striptags stripchar crypto-js
+
+# Install Utilize Date
+npm install moment moment-timezone @date-io/moment
+
+# Install Custom CSS
+npm install sass styled-components
+npm install @emotion/react @emotion/styled @emotion/babel-plugin
+
+# Install Render HTML
+npm install html-react-parser react-dotdotdot
