@@ -20,7 +20,7 @@ export function loadPostHttp(dt: any, state: any, dispatch: any, clear: string) 
     });
 }
 
-export const loadPost = (dt: any, wait: boolean, timer = 1000, state: any) => async (dispatch: any) => {
+export const loadPost = (dt: any, wait?: boolean, timer = 1000, state?: any) => async (dispatch: any) => {
     let data = await new Promise(resolve => {
         setTimeout(((dt, state, dispatch, t): any => {
             resolve(loadPostHttp(dt, state, dispatch, t.CLEAR_POST)) 

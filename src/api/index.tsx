@@ -5,17 +5,17 @@ import serialize from 'serialize-javascript';
 
 // import { localStore } from '../helpers';
 
-interface CommonHeaders extends HeadersDefaults {
-    'Authorization': string;
-    'Content-Type': string;
-    'Access-Control-Allow-Origin': string;
-}
+// interface CommonHeaders extends HeadersDefaults {
+//     'Authorization': string;
+//     'Content-Type': string;
+//     'Access-Control-Allow-Origin': string;
+// }
 
-axios.defaults.headers = {
-    'Authorization': '',
-    'Content-Type': '',
-    'Access-Control-Allow-Origin': ''
-} as CommonHeaders;
+// axios.defaults.headers = {
+//     'Authorization': '',
+//     'Content-Type': '',
+//     'Access-Control-Allow-Origin': ''
+// } as CommonHeaders;
 
 class HttpApi {
 
@@ -25,12 +25,12 @@ class HttpApi {
         // axios.defaults.headers = { 'Authorization': (token) ? `jwt ${localStore('_access_token')}` : '' } as CommonHeaders;
 
         if (!multipart) {
-            // axios.defaults.headers['Content-Type'] = 'application/json';
-            axios.defaults.headers = { 'Content-Type': 'application/json' } as CommonHeaders;
+            axios.defaults.headers['Content-Type'] = 'application/json';
+            // axios.defaults.headers = { 'Content-Type': 'application/json' } as CommonHeaders;
         }
 
-        // axios.defaults.headers['Access-Control-Allow-Origin'] = '*'
-        axios.defaults.headers = { 'Access-Control-Allow-Origin': '*' } as CommonHeaders;
+        axios.defaults.headers['Access-Control-Allow-Origin'] = '*'
+        // axios.defaults.headers = { 'Access-Control-Allow-Origin': '*' } as CommonHeaders;
     }
 
     static requestConfig(cancelToken?: any) {
