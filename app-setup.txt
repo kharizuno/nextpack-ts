@@ -12,7 +12,9 @@ npm install redux react-redux redux-thunk redux-promise-middleware
 
 # Install Api
 npm install http https axios serialize-javascript local-storage
-npm install @types/serialize-javascript
+npm install @types/serialize-javascript @types/validator @types/crypto-js
+
+# Install Graphql
 npm install @apollo/client graphql
 
 # Install Validator
@@ -23,7 +25,8 @@ npm install moment moment-timezone @date-io/moment
 
 # Install Custom CSS
 npm install sass styled-components
-npm install @emotion/react @emotion/styled @emotion/babel-plugin
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/fontawesome-svg-core
 
 # Install Render HTML
 npm install html-react-parser react-dotdotdot
